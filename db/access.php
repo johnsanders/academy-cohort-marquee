@@ -1,6 +1,6 @@
 <?php
 $capabilities = array(
-	'block/cohort_marquee:myaddinstance' => array(
+	'block/academymarquee:myaddinstance' => array(
 		'captype' => 'write',
 		'contextlevel' => CONTEXT_SYSTEM,
 		'archetypes' => array(
@@ -8,7 +8,7 @@ $capabilities = array(
 		),
 		'clonepermissionsfrom' => 'moodle/my:manageblocks'
 	),
-	'block/cohort_marquee:addinstance' => array(
+	'block/academymarquee:addinstance' => array(
 		'riskbitmask' => RISK_SPAM | RISK_XSS,
 		'captype' => 'write',
 		'contextlevel' => CONTEXT_BLOCK,

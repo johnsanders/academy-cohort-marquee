@@ -1,10 +1,10 @@
 <?php
-class block_cohort_marquee extends block_base
+class block_academymarquee extends block_base
 {
 
 	function init()
 	{
-		$this->title = get_string('pluginname', 'block_cohort_marquee');
+		$this->title = get_string('pluginname', 'block_academymarquee');
 	}
 	function has_config()
 	{
@@ -13,6 +13,10 @@ class block_cohort_marquee extends block_base
 	function hide_header()
 	{
 		return true;
+	}
+	public function applicable_formats()
+	{
+		return array('my' => true);
 	}
 	public function instance_allow_multiple()
 	{
