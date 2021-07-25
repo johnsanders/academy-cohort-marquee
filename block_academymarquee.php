@@ -35,7 +35,7 @@ class block_academymarquee extends block_base
 		$cohorts = $DB->get_records_sql('SELECT cohortid FROM {cohort_members} WHERE userid=?', array($USER->id));
 		$messagesHtml = '';
 		foreach ($cohorts as $cohort) {
-			$messagesHtml .= get_config('block_marquee_cohort', 'cohort_' . $cohort->cohortid);
+			$messagesHtml .= get_config('block_academymarquee', 'cohort_' . $cohort->cohortid);
 		}
 		$this->content = new stdClass;
 		$this->content->text = $messagesHtml;
